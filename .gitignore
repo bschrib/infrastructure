@@ -32,4 +32,3 @@ override.tf.json
 terraform.rc
 
 .DS_Store
-load_creds.sh
