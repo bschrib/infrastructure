@@ -15,7 +15,7 @@ output "ses_domain_dkim_tokens" {
 
 output "smtp_credentials" {
   value = {
-    username  = aws_iam_access_key.ses_smtp_user_key.id
+    username  = aws_iam_user.ses_smtp_user.name
     password  = aws_iam_access_key.ses_smtp_user_key.secret
     endpoint  = "email-smtp.${var.aws_region}.amazonaws.com"
   }

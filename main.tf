@@ -60,3 +60,8 @@ module "cloudflare_ses" {
   ttl     = 1
   token   = module.aws_ses[each.value].ses_domain_dkim_tokens
 }
+
+
+// todo;
+// either add a python script to convert the smtp secret to a password and call on it via a null call in terraform?
+// add script to facilitate requesting move out of sandbox?
